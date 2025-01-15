@@ -1,0 +1,27 @@
+
+.menu-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.menu-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+.card img {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+}
+.card {
+    height: 100%;
+}

@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 26, 2024, 11:02:09 AM
+    Author     : trung
+*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('img/openart-image_yfh4QFPK_1719128796338_raw.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+.content {
+    flex: 1;
+    margin-top: 200px; 
+}
+.navbar {
+    background-color: #fff; /* Màu nền cho thanh điều hướng */
+}
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+}
+.login-container {
+    margin-top: 200px; /* Adjust this value to add more space */
+    margin-bottom: 200px; /* Adjust this value to add more space */
+}
+/*        .login-container {
+            max-width: 400px;
+            width: 100%;
+            margin: auto;
+        }
+        .form-outline {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+        .form-control {
+            padding: 12px 12px 12px 0;
+            font-size: 16px;
+            height: auto;
+        }*/
+/*.form-label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+    font-size: 16px;
+    color: #666;
+    padding-left: 12px;
+}
+.form-control:focus ~ .form-label,
+.form-control:not(:placeholder-shown) ~ .form-label,
+.form-control:valid ~ .form-label {
+    top: -10px;
+    font-size: 12px;
+    color: #007bff;
+}*/
+body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+    
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
